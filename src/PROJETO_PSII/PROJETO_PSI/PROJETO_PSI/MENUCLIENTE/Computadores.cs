@@ -128,68 +128,140 @@ namespace PROJETO_PSI.MENUCLIENTE
         {
             if (checkBox1.Checked)
             {
+                SqlCommand command = new SqlCommand
+                {
+                    Connection = db,
+                    CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
+                };
+                command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label2.Text;
+                command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label13.Text;
+                db.Open();
+                command.ExecuteNonQuery();
+                db.Close();
                 valor = Convert.ToInt32(label8.Text);
-                price = Convert.ToInt32(label3.Text);
+                price = Convert.ToInt32(label13.Text);
                 label8.Text = Convert.ToString(valor + price);
             }
             else
             {
+                SqlCommand command = new SqlCommand
+                {
+                    Connection = db,
+                    CommandText = "DELETE FROM carrinhoo WHERE nome = @NomeDoProduto"
+                };
+                command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label2.Text;
+                db.Open();
+                command.ExecuteNonQuery();
+                db.Close();
                 valor = Convert.ToInt32(label8.Text);
-                price = Convert.ToInt32(label3.Text);
+                price = Convert.ToInt32(label13.Text);
                 label8.Text = Convert.ToString(valor - price);
             }
-            SqlCommand command = new SqlCommand
-            {
-                Connection = db,
-                CommandText = "INSERT INTO carrinho (nome, preco) VALUES (@NomeDoProduto, @Preco)"
-            };
-            command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label2.Text;
-            command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label3.Text;
-            db.Open();
-            command.ExecuteNonQuery();
-            db.Close();
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand
+            if (checkBox2.Checked)
             {
-                Connection = db,
-                CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
-            };
-            command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label36.Text;
-            command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label35.Text;
-            db.Open();
-            command.ExecuteNonQuery();
-            db.Close();
+                SqlCommand command = new SqlCommand
+                {
+                    Connection = db,
+                    CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
+                };
+                command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label36.Text;
+                command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label35.Text;
+                db.Open();
+                command.ExecuteNonQuery();
+                db.Close();
+                valor = Convert.ToInt32(label8.Text);
+                price = Convert.ToInt32(label35.Text);
+                label8.Text = Convert.ToString(valor + price);
+            }
+            else
+            {
+                SqlCommand command = new SqlCommand
+                {
+                    Connection = db,
+                    CommandText = "DELETE FROM carrinhoo WHERE nome = @NomeDoProduto"
+                };
+                command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label36.Text;
+                db.Open();
+                command.ExecuteNonQuery();
+                db.Close();
+                valor = Convert.ToInt32(label8.Text);
+                price = Convert.ToInt32(label35.Text);
+                label8.Text = Convert.ToString(valor - price);
+            }
         }
 
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand
+            if (checkBox8.Checked)
             {
-                Connection = db,
-                CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
-            };
-            command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label12.Text;
-            command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label11.Text;
-            db.Open();
-            command.ExecuteNonQuery();
-            db.Close();
+                SqlCommand command = new SqlCommand
+                {
+                    Connection = db,
+                    CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
+                };
+                command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label12.Text;
+                command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label11.Text;
+                db.Open();
+                command.ExecuteNonQuery();
+                db.Close();
+                valor = Convert.ToInt32(label8.Text);
+                price = Convert.ToInt32(label11.Text);
+                label8.Text = Convert.ToString(valor + price);
+            }
+            else
+            {
+                SqlCommand command = new SqlCommand
+                {
+                    Connection = db,
+                    CommandText = "DELETE FROM carrinhoo WHERE nome = @NomeDoProduto"
+                };
+                command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label12.Text;
+                db.Open();
+                command.ExecuteNonQuery();
+                db.Close();
+                valor = Convert.ToInt32(label8.Text);
+                price = Convert.ToInt32(label11.Text);
+                label8.Text = Convert.ToString(valor - price);
+            }
         }
 
         private void checkBox7_CheckedChanged(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand
+            if (checkBox7.Checked)
             {
-                Connection = db,
-                CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
-            };
-            command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label10.Text;
-            command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label9.Text;
-            db.Open();
-            command.ExecuteNonQuery();
-            db.Close();
+                SqlCommand command = new SqlCommand
+                {
+                    Connection = db,
+                    CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
+                };
+                command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label10.Text;
+                command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label9.Text;
+                db.Open();
+                command.ExecuteNonQuery();
+                db.Close();
+                valor = Convert.ToInt32(label8.Text);
+                price = Convert.ToInt32(label9.Text);
+                label8.Text = Convert.ToString(valor + price);
+            }
+            else
+            {
+                SqlCommand command = new SqlCommand
+                {
+                    Connection = db,
+                    CommandText = "DELETE FROM carrinhoo WHERE nome = @NomeDoProduto"
+                };
+                command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label10.Text;
+                db.Open();
+                command.ExecuteNonQuery();
+                db.Close();
+                valor = Convert.ToInt32(label8.Text);
+                price = Convert.ToInt32(label9.Text);
+                label8.Text = Convert.ToString(valor - price);
+            }
         }
 
         private void label13_Paint(object sender, PaintEventArgs e)

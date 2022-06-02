@@ -85,12 +85,12 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Navy;
-            this.button1.Location = new System.Drawing.Point(785, 505);
+            this.button1.BackColor = System.Drawing.Color.GhostWhite;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Teal;
+            this.button1.Location = new System.Drawing.Point(846, 530);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 38);
+            this.button1.Size = new System.Drawing.Size(130, 63);
             this.button1.TabIndex = 83;
             this.button1.Text = "MENU";
             this.button1.UseVisualStyleBackColor = false;
@@ -398,10 +398,10 @@ namespace PROJETO_PSI.MENUCLIENTE
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(887, 45);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(887, 36);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(22, 25);
+            this.label8.Size = new System.Drawing.Size(30, 36);
             this.label8.TabIndex = 149;
             this.label8.Text = "0";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -409,10 +409,11 @@ namespace PROJETO_PSI.MENUCLIENTE
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(809, 45);
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.Color.Teal;
+            this.label14.Location = new System.Drawing.Point(782, 36);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 25);
+            this.label14.Size = new System.Drawing.Size(99, 36);
             this.label14.TabIndex = 148;
             this.label14.Text = "TOTAL:";
             // 
@@ -420,7 +421,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 614);
+            this.ClientSize = new System.Drawing.Size(1006, 614);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);

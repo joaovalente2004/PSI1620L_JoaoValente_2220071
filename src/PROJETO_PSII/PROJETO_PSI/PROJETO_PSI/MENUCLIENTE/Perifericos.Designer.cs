@@ -39,7 +39,6 @@ namespace PROJETO_PSI.MENUCLIENTE
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
@@ -83,6 +82,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             this.label36 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -97,12 +97,12 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Navy;
-            this.button1.Location = new System.Drawing.Point(386, 12);
+            this.button1.BackColor = System.Drawing.Color.GhostWhite;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Teal;
+            this.button1.Location = new System.Drawing.Point(1040, 462);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 38);
+            this.button1.Size = new System.Drawing.Size(130, 77);
             this.button1.TabIndex = 9;
             this.button1.Text = "MENU";
             this.button1.UseVisualStyleBackColor = false;
@@ -183,16 +183,6 @@ namespace PROJETO_PSI.MENUCLIENTE
             this.checkBox1.TabIndex = 19;
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(311, 262);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(22, 21);
-            this.checkBox2.TabIndex = 20;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -634,31 +624,44 @@ namespace PROJETO_PSI.MENUCLIENTE
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(944, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 25);
+            this.label1.Size = new System.Drawing.Size(99, 36);
             this.label1.TabIndex = 83;
             this.label1.Text = "TOTAL:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(1022, 34);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(1040, 34);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(22, 25);
+            this.label8.Size = new System.Drawing.Size(30, 36);
             this.label8.TabIndex = 84;
             this.label8.Text = "0";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             this.label8.Paint += new System.Windows.Forms.PaintEventHandler(this.label8_Paint);
             // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(311, 262);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(22, 21);
+            this.checkBox2.TabIndex = 85;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
             // Perifericos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 551);
+            this.ClientSize = new System.Drawing.Size(1176, 551);
+            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -700,7 +703,6 @@ namespace PROJETO_PSI.MENUCLIENTE
             this.Controls.Add(this.checkBox8);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
@@ -741,7 +743,6 @@ namespace PROJETO_PSI.MENUCLIENTE
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
@@ -785,5 +786,6 @@ namespace PROJETO_PSI.MENUCLIENTE
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
