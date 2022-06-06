@@ -64,7 +64,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Image = global::PROJETO_PSI.Properties.Resources.PROBLEMA;
             this.pictureBox5.Location = new System.Drawing.Point(329, 227);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(194, 51);
@@ -74,7 +74,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Image = global::PROJETO_PSI.Properties.Resources.PECA;
             this.pictureBox4.Location = new System.Drawing.Point(38, 250);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(194, 51);
@@ -93,7 +93,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::PROJETO_PSI.Properties.Resources.NOME;
             this.pictureBox3.Location = new System.Drawing.Point(597, 77);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(194, 51);
@@ -112,10 +112,11 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::PROJETO_PSI.Properties.Resources.MARCA;
             this.pictureBox2.Location = new System.Drawing.Point(329, 77);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(194, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -131,7 +132,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::PROJETO_PSI.Properties.Resources.N_SERIE;
             this.pictureBox1.Location = new System.Drawing.Point(38, 77);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 51);

@@ -87,5 +87,10 @@ namespace PROJETO_PSI.MENUCLIENTE
         {
             
         }
+
+        public void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
