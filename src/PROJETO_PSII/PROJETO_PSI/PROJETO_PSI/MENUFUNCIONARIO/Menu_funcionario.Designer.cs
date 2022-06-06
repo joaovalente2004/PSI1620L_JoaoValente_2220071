@@ -32,21 +32,23 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_funcionario));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2.BackColor = System.Drawing.Color.GhostWhite;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.Navy;
+            this.button2.ForeColor = System.Drawing.Color.SteelBlue;
             this.button2.Location = new System.Drawing.Point(768, 355);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 40);
@@ -57,9 +59,9 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.BackColor = System.Drawing.Color.GhostWhite;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Navy;
+            this.button1.ForeColor = System.Drawing.Color.SteelBlue;
             this.button1.Location = new System.Drawing.Point(768, 413);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 68);
@@ -68,24 +70,12 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(189, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(557, 61);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "BEM-VINDO FUNCIONÁRIO";
-            // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
+            this.button5.BackColor = System.Drawing.Color.GhostWhite;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.Navy;
+            this.button5.ForeColor = System.Drawing.Color.SteelBlue;
             this.button5.Location = new System.Drawing.Point(14, 42);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(273, 112);
@@ -96,10 +86,10 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Silver;
+            this.button6.BackColor = System.Drawing.Color.GhostWhite;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.Navy;
+            this.button6.ForeColor = System.Drawing.Color.SteelBlue;
             this.button6.Location = new System.Drawing.Point(14, 176);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(273, 147);
@@ -107,16 +97,6 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
             this.button6.Text = "LISTA DA MONTAGEM DOS COMPUTADORES";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(17, 136);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(268, 30);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "SELECIONE UMA OPÇÃO";
             // 
             // groupBox1
             // 
@@ -136,10 +116,10 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Silver;
+            this.button7.BackColor = System.Drawing.Color.GhostWhite;
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button7.ForeColor = System.Drawing.Color.Navy;
+            this.button7.ForeColor = System.Drawing.Color.SteelBlue;
             this.button7.Location = new System.Drawing.Point(293, 42);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(267, 112);
@@ -150,10 +130,10 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.BackColor = System.Drawing.Color.GhostWhite;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.Navy;
+            this.button3.ForeColor = System.Drawing.Color.SteelBlue;
             this.button3.Location = new System.Drawing.Point(293, 174);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(267, 151);
@@ -162,21 +142,43 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PROJETO_PSI.Properties.Resources.Sem_título_3_;
+            this.pictureBox1.Location = new System.Drawing.Point(215, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(544, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PROJETO_PSI.Properties.Resources.JJJ11;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(150, 155);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            // 
             // Menu_funcionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 506);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu_funcionario";
             this.Text = "MENU FUNCIONÁRIO";
             this.Load += new System.EventHandler(this.Menu_funcionario_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,12 +187,12 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
         #endregion
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -72,5 +72,20 @@ namespace PROJETO_PSI.MENUCLIENTE
             db.Close();
             MessageBox.Show("Compra realizada com sucesso!");
         }
+
+        public void label12_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        public void label1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void label2_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
     }
 }

@@ -14,14 +14,14 @@ namespace PROJETO_PSI.MENUCLIENTE
         public static SqlConnection db = new SqlConnection(connectionString);
         private int valor;
         private int price;
+        
+
+
+
         public Perifericos()
         {
-           
-
             
-
-
-                 InitializeComponent();
+            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace PROJETO_PSI.MENUCLIENTE
 
         private void Perifericos_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         public void label2_Paint(object sender, PaintEventArgs e)

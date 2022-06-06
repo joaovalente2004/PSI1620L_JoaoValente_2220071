@@ -118,20 +118,41 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="KM22-GB-222" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KM22-GB-222.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="KM22-ASUS-211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KM22-ASUS-211.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5099206080270_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5099206080270_1_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="46120092 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\46120092 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="g915-tkl-gallery-1-carbon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\g915-tkl-gallery-1-carbon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sem título(4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sem título(4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PRO X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PRO X.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sem título(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sem título(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sem título(6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sem título(6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KM22-GB-222" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KM22-GB-222.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_238711" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_238711.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="I9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\I9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radient-gradient-bg-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radient-gradient-bg-light.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sem título(3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sem título(3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sem título(7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sem título(7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JJJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JJJ1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,31 +160,49 @@
   <data name="GVN3080GAMINGOC-12_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GVN3080GAMINGOC-12_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ST4000VN008" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ST4000VN008.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="JJJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JJJ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KM22-ASUS-211" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KM22-ASUS-211.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="img_238711" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_238711.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="KM21-MSI-113" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KM21-MSI-113.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="I9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\I9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="46120092" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\46120092.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sem título(4)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sem título(4)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1_332_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1_332_27.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CLIENTE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CLIENTE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sem título(5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sem título(5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="5099206080270_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5099206080270_1_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TITULO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TITULO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="46120092 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\46120092 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="g915-tkl-gallery-1-carbon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\g915-tkl-gallery-1-carbon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5099206080270_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5099206080270_1_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="46120092" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\46120092.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ST4000VN008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ST4000VN008.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KM21-MSI-113" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KM21-MSI-113.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KM22-MSI-211" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KM22-MSI-211.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JJJ11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JJJ11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

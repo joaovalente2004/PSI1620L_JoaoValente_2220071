@@ -162,7 +162,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button2.Location = new System.Drawing.Point(630, 284);
+            this.button2.Location = new System.Drawing.Point(628, 307);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 38);
             this.button2.TabIndex = 45;

@@ -99,7 +99,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             this.button1.BackColor = System.Drawing.Color.GhostWhite;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Teal;
+            this.button1.ForeColor = System.Drawing.Color.SteelBlue;
             this.button1.Location = new System.Drawing.Point(1040, 462);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 77);
@@ -625,7 +625,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Teal;
+            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
             this.label1.Location = new System.Drawing.Point(944, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 36);

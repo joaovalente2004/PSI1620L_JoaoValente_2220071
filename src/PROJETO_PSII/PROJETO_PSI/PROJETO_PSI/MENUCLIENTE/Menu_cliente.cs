@@ -94,5 +94,10 @@ namespace PROJETO_PSI.Apresentação
             menu.Show();
             this.Close();
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
