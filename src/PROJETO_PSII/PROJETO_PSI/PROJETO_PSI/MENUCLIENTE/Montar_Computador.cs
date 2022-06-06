@@ -98,17 +98,16 @@ namespace PROJETO_PSI.MENUCLIENTE
                 CommandText = "INSERT INTO montar (PLACA_GRAFICA,PLACA_MAE,PROCESSADOR,FONTE,RAM,VENTOINHA,DISCO) VALUES (@textbox1,@textbox2,@textbox3,@textbox4,@textbox5,@textbox6,@textbox7)"
 
             };
-            command.Parameters.AddWithValue("@textbox1", textBox1.Text);
+            command.Parameters.AddWithValue("@textbox1", textBox2.Text);
             command.Parameters.AddWithValue("@textbox2", textBox2.Text);
             command.Parameters.AddWithValue("@textbox3", textBox3.Text);
             command.Parameters.AddWithValue("@textbox4", textBox4.Text);
             command.Parameters.AddWithValue("@textbox5", textBox5.Text);
             command.Parameters.AddWithValue("@textbox6", textBox6.Text);
             command.Parameters.AddWithValue("@textbox7", textBox7.Text);
-           
-            db.Open();
-            command.ExecuteNonQuery();
-            db.Close();
+            
+            
+            
         }
     }
 }

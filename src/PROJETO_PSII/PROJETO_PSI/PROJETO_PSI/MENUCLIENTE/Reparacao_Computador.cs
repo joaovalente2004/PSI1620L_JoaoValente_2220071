@@ -190,6 +190,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             command.Parameters.AddWithValue("@textbox3", textBox3.Text);
             command.Parameters.AddWithValue("@textbox4", textBox4.Text);
             command.Parameters.AddWithValue("@richTextBox1", richTextBox1.Text);
+            MessageBox.Show("Descrição da reparação guardada com sucesso!");
             db.Open();
             command.ExecuteNonQuery();
             db.Close();
