@@ -185,15 +185,37 @@ namespace PROJETO_PSI.MENUCLIENTE
                 CommandText = "INSERT INTO reparar (NSERIE,MARCA,NOME,PECA_AVARIADA,TIPO_DE_PROBLEMA) VALUES (@textbox1,@textbox2,@textbox3,@textbox4,@richTextBox1)"
 
             };
-            command.Parameters.AddWithValue("@textbox1", textBox1.Text);
-            command.Parameters.AddWithValue("@textbox2", textBox2.Text);
-            command.Parameters.AddWithValue("@textbox3", textBox3.Text);
-            command.Parameters.AddWithValue("@textbox4", textBox4.Text);
-            command.Parameters.AddWithValue("@richTextBox1", richTextBox1.Text);
-            MessageBox.Show("Descrição da reparação guardada com sucesso!");
-            db.Open();
-            command.ExecuteNonQuery();
-            db.Close();
+            
+
+            
+            
+            if(textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox1.Text == "" || richTextBox1.Text == "")
+            {
+                MessageBox.Show("Preencha os espaços obrigatórios");
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+                richTextBox1.Text = "";
+            }
+            else
+            {
+                command.Parameters.AddWithValue("@textbox1", textBox1.Text);
+                command.Parameters.AddWithValue("@textbox2", textBox2.Text);
+                command.Parameters.AddWithValue("@textbox3", textBox3.Text);
+                command.Parameters.AddWithValue("@textbox4", textBox4.Text);
+                command.Parameters.AddWithValue("@richTextBox1", richTextBox1.Text);
+                db.Open();
+                command.ExecuteNonQuery();
+                MessageBox.Show("Dados guardados com sucesso");
+                db.Close();
+
+               
+                Menu_cliente menu = new Menu_cliente();
+                menu.Show();
+                this.Close();
+            }
+            
         }
     }
 }

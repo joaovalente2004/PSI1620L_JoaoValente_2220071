@@ -544,7 +544,7 @@ namespace PROJETO_PSI.MENUCLIENTE
 
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked)
+            if (checkBox5.Checked)
             {
                 SqlCommand command = new SqlCommand
                 {

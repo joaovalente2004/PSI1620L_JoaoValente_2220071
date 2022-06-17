@@ -8,6 +8,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace PROJETO_PSI.MENUCLIENTE
 {
@@ -15,6 +17,9 @@ namespace PROJETO_PSI.MENUCLIENTE
     {
         public static string connectionString = ConfigurationManager.ConnectionStrings["cnPSI"].ConnectionString;
         public static SqlConnection db = new SqlConnection(connectionString);
+
+        String path = @"C:\\FACTURAS\\facturas.txt";
+
         public carrinho()
         {
             InitializeComponent();
@@ -50,7 +55,24 @@ namespace PROJETO_PSI.MENUCLIENTE
             adaptadorr.Fill(dtt);
             dataGridView2.DataSource = dtt;
             db.Close();
-            
+
+            float valortotal = 0;
+
+            foreach (DataRow dr in dt.Rows )
+            {
+                valortotal += float.Parse(dr[1].ToString().Replace("€", "").Replace(".", ","));
+            }
+            label1.Text = string.Format("{0} €", valortotal);
+
+            foreach (DataRow dr in dtt.Rows)
+            {
+                valortotal += float.Parse(dr[1].ToString().Replace("€", "").Replace(".", ","));
+            }
+            label1.Text = string.Format("{0} €", valortotal);
+
+
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -71,6 +93,10 @@ namespace PROJETO_PSI.MENUCLIENTE
             commandd.ExecuteNonQuery();
             db.Close();
             MessageBox.Show("Compra realizada com sucesso!");
+
+            Menu_cliente menu = new Menu_cliente();
+            menu.Show();
+            this.Close();
         }
 
         public void label12_Paint(object sender, PaintEventArgs e)
