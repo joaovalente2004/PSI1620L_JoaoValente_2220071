@@ -49,11 +49,33 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            int index = dataGridView1.CurrentCell.RowIndex;
+
+            SqlCommand command = new SqlCommand();
+
+            command.Connection = db;
+            command.CommandText = "DELETE FROM montar WHERE nome = @Username";
+            command.Parameters.Add("@username", SqlDbType.VarChar).Value = dataGridView1.Rows[index].Cells[0].Value;
+
+            db.Open();
+            command.ExecuteNonQuery();
+            db.Close();
+
+            MessageBox.Show("Conta removida com sucesso !", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            registo fun = new registo();
+            fun.Show();
+            this.Close();
+
+
+            /*
             SqlCommand command = new SqlCommand("DELETE montar", db);
             db.Open();
             command.ExecuteNonQuery();
             db.Close();
             MessageBox.Show("Lista apagada com sucesso");
+            */
         }
     }
 }
