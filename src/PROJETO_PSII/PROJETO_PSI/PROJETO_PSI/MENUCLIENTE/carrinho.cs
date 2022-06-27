@@ -118,5 +118,10 @@ namespace PROJETO_PSI.MENUCLIENTE
         {
             
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

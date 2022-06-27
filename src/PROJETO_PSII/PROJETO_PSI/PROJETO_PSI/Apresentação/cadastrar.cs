@@ -22,6 +22,8 @@ namespace PROJETO_PSI.Apresentação
         private async void button3_Click(object sender, EventArgs e)
         {
             SqlCommand command = new SqlCommand();
+            SqlCommand commanddd = new SqlCommand();
+            SqlCommand commandddd = new SqlCommand();
             db.Open();
 
             string query = "SELECT * FROM cliente WHERE nome = '" + textBox1.Text + "'";
@@ -42,9 +44,13 @@ namespace PROJETO_PSI.Apresentação
             {
                 reader.Close();
                 command = new SqlCommand("INSERT INTO cliente (nome, senha) VALUES (@username, @password)", db);
+                commanddd = new SqlCommand("DELETE carrinho", db);
+                commandddd = new SqlCommand("DELETE carrinhoo", db);
                 command.Parameters.Add("@username", System.Data.SqlDbType.VarChar).Value = textBox1.Text;
                 command.Parameters.Add("@password", System.Data.SqlDbType.VarChar).Value = textBox2.Text;
                 await command.ExecuteNonQueryAsync();
+                await commanddd.ExecuteNonQueryAsync();
+                await commandddd.ExecuteNonQueryAsync();
                 this.Hide();
                 Cliente back = new Cliente();
                 back.Show();
