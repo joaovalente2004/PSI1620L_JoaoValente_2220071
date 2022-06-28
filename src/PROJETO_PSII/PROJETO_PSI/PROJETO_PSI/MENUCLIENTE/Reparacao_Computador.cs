@@ -177,12 +177,12 @@ namespace PROJETO_PSI.MENUCLIENTE
 
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        public void button2_Click_1(object sender, EventArgs e)
         {
             SqlCommand command = new SqlCommand
             {
                 Connection = db,
-                CommandText = "INSERT INTO reparar (NSERIE,MARCA,NOME,PECA_AVARIADA,TIPO_DE_PROBLEMA) VALUES (@textbox1,@textbox2,@textbox3,@textbox4,@richTextBox1)"
+                CommandText = "INSERT INTO reparar (NSERIE,MARCA,NOME,PECA_AVARIADA,TIPO_DE_PROBLEMA,pessoa) VALUES (@textbox1,@textbox2,@textbox3,@textbox4,@richTextBox1,@pessoa)"
 
             };
             
@@ -205,6 +205,7 @@ namespace PROJETO_PSI.MENUCLIENTE
                 command.Parameters.AddWithValue("@textbox3", textBox3.Text);
                 command.Parameters.AddWithValue("@textbox4", textBox4.Text);
                 command.Parameters.AddWithValue("@richTextBox1", richTextBox1.Text);
+                command.Parameters.AddWithValue("@pessoa", Program.userlogged);
                 db.Open();
                 command.ExecuteNonQuery();
                 MessageBox.Show("Dados guardados com sucesso");
