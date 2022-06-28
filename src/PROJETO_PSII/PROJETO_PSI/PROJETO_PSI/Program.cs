@@ -10,6 +10,8 @@ namespace PROJETO_PSI
     {
         /// <summary>
         ///  The main entry point for the application.
+        ///  
+         public static string userlogged { get; set; }
         /// </summary>
         [STAThread]
         static void Main()

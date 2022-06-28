@@ -34,7 +34,7 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
         private void Lista_montagem_Load(object sender, EventArgs e)
         {
             db.Open();
-            string query = "SELECT * FROM montar";
+            string query = "SELECT PLACA_GRAFICA,PLACA_MAE,PROCESSADOR,FONTE,RAM,VENTOINHA,DISCO,pessoa FROM montar";
             SqlDataAdapter adaptador = new SqlDataAdapter(query, db);
             DataTable dt = new DataTable();
             adaptador.Fill(dt);

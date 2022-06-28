@@ -131,10 +131,11 @@ namespace PROJETO_PSI.MENUCLIENTE
                 SqlCommand command = new SqlCommand
                 {
                     Connection = db,
-                    CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
+                    CommandText = "INSERT INTO carrinhoo (nome, preco,pessoa) VALUES (@NomeDoProduto, @Preco,@pessoa)"
                 };
                 command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label2.Text;
                 command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label13.Text;
+                command.Parameters.Add("@pessoa", SqlDbType.VarChar).Value = Program.userlogged;
                 db.Open();
                 command.ExecuteNonQuery();
                 db.Close();
@@ -166,10 +167,11 @@ namespace PROJETO_PSI.MENUCLIENTE
                 SqlCommand command = new SqlCommand
                 {
                     Connection = db,
-                    CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
+                    CommandText = "INSERT INTO carrinhoo (nome, preco,pessoa) VALUES (@NomeDoProduto, @Preco,@pessoa)"
                 };
                 command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label36.Text;
                 command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label35.Text;
+                command.Parameters.Add("@pessoa", SqlDbType.VarChar).Value = Program.userlogged;
                 db.Open();
                 command.ExecuteNonQuery();
                 db.Close();
@@ -201,10 +203,11 @@ namespace PROJETO_PSI.MENUCLIENTE
                 SqlCommand command = new SqlCommand
                 {
                     Connection = db,
-                    CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
+                    CommandText = "INSERT INTO carrinhoo (nome, preco,pessoa) VALUES (@NomeDoProduto, @Preco,@pessoa)"
                 };
                 command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label12.Text;
                 command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label11.Text;
+                command.Parameters.Add("@pessoa", SqlDbType.VarChar).Value = Program.userlogged;
                 db.Open();
                 command.ExecuteNonQuery();
                 db.Close();
@@ -236,10 +239,11 @@ namespace PROJETO_PSI.MENUCLIENTE
                 SqlCommand command = new SqlCommand
                 {
                     Connection = db,
-                    CommandText = "INSERT INTO carrinhoo (nome, preco) VALUES (@NomeDoProduto, @Preco)"
+                    CommandText = "INSERT INTO carrinhoo (nome, preco,pessoa) VALUES (@NomeDoProduto, @Preco,@pessoa)"
                 };
                 command.Parameters.Add("@NomeDoProduto", SqlDbType.VarChar).Value = label10.Text;
                 command.Parameters.Add("@Preco", SqlDbType.VarChar).Value = label9.Text;
+                command.Parameters.Add("@pessoa", SqlDbType.VarChar).Value = Program.userlogged;
                 db.Open();
                 command.ExecuteNonQuery();
                 db.Close();

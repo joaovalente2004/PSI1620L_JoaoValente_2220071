@@ -31,7 +31,7 @@ namespace PROJETO_PSI.Apresentação
 
             if (dt.Rows.Count == 1)
             {
-
+                Program.userlogged = textBox1.Text;
                 Menu_cliente principal = new Menu_cliente();
                 this.Hide();
                 principal.Show();
@@ -94,5 +94,9 @@ namespace PROJETO_PSI.Apresentação
             }
         }
 
+        private void Cliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

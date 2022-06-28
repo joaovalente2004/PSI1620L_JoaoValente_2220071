@@ -39,6 +39,7 @@ namespace PROJETO_PSI.MENUCLIENTE
 
         private void carrinho_Load(object sender, EventArgs e)
         {
+            /*
             db.Open();
             string query = "SELECT * FROM carrinho";
             SqlDataAdapter adaptador = new SqlDataAdapter(query, db);
@@ -46,8 +47,14 @@ namespace PROJETO_PSI.MENUCLIENTE
             adaptador.Fill(dt);
             dataGridView1.DataSource = dt;
             db.Close();
+            */
+            db.Open(); string query = "SELECT nome, preco FROM carrinho WHERE pessoa = '" + Program.userlogged + "'"; SqlDataAdapter adaptador = new SqlDataAdapter(query, db); DataTable dt = new DataTable(); adaptador.Fill(dt); dataGridView1.DataSource = dt; db.Close();
 
-            
+            db.Open(); string queryy = "SELECT nome, preco FROM carrinhoo WHERE pessoa = '" + Program.userlogged + "'"; SqlDataAdapter adaptadorr = new SqlDataAdapter(queryy, db); DataTable dtt = new DataTable(); adaptadorr.Fill(dtt); dataGridView2.DataSource = dtt; db.Close();
+            //DataTable dtt = new DataTable();
+            //adaptadorr.Fill(dtt);
+            //dataGridView2.DataSource = dtt;
+            /*
             db.Open();
             string queryy = "SELECT * FROM carrinhoo";
             SqlDataAdapter adaptadorr = new SqlDataAdapter(queryy, db);
@@ -55,6 +62,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             adaptadorr.Fill(dtt);
             dataGridView2.DataSource = dtt;
             db.Close();
+            */
 
             float valortotal = 0;
 

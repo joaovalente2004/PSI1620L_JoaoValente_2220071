@@ -95,7 +95,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             SqlCommand command = new SqlCommand
             {
                 Connection = db,
-                CommandText = "INSERT INTO montar (PLACA_GRAFICA,PLACA_MAE,PROCESSADOR,FONTE,RAM,VENTOINHA,DISCO) VALUES (@textbox1,@textbox2,@textbox3,@textbox4,@textbox5,@textbox6,@textbox7)"
+                CommandText = "INSERT INTO montar (PLACA_GRAFICA,PLACA_MAE,PROCESSADOR,FONTE,RAM,VENTOINHA,DISCO,pessoa) VALUES (@textbox1,@textbox2,@textbox3,@textbox4,@textbox5,@textbox6,@textbox7,@pessoa)"
 
             };
             command.Parameters.AddWithValue("@textbox1", textBox1.Text);
@@ -105,7 +105,8 @@ namespace PROJETO_PSI.MENUCLIENTE
             command.Parameters.AddWithValue("@textbox5", textBox5.Text);
             command.Parameters.AddWithValue("@textbox6", textBox6.Text);
             command.Parameters.AddWithValue("@textbox7", textBox7.Text);
-            MessageBox.Show("Descrição da montagemz guardada com sucesso!");
+            command.Parameters.AddWithValue("@pessoa", Program.userlogged);
+            MessageBox.Show("Descrição da montagem guardada com sucesso!");
             db.Open();
             command.ExecuteNonQuery();
             db.Close();

@@ -22,7 +22,7 @@ namespace PROJETO_PSI.MENUFUNCIONARIO
         public void Lista_reparacao_Load(object sender, EventArgs e)
         {
             db.Open();
-            string query = "SELECT * FROM reparar";
+            string query = "SELECT NSERIE,MARCA,NOME,PECA_AVARIADA,TIPO_DE_PROBLEMA,pessoa FROM reparar";
             SqlDataAdapter adaptador = new SqlDataAdapter(query, db);
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
