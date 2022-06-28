@@ -105,7 +105,7 @@ namespace PROJETO_PSI.MENUCLIENTE
             command.Parameters.AddWithValue("@textbox5", textBox5.Text);
             command.Parameters.AddWithValue("@textbox6", textBox6.Text);
             command.Parameters.AddWithValue("@textbox7", textBox7.Text);
-            command.Parameters.AddWithValue("@pessoa", Program.userlogged);
+            command.Parameters.Add("@pessoa", SqlDbType.VarChar).Value = Program.userlogged;
             MessageBox.Show("Descrição da montagem guardada com sucesso!");
             db.Open();
             command.ExecuteNonQuery();

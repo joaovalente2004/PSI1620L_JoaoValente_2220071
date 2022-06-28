@@ -205,7 +205,7 @@ namespace PROJETO_PSI.MENUCLIENTE
                 command.Parameters.AddWithValue("@textbox3", textBox3.Text);
                 command.Parameters.AddWithValue("@textbox4", textBox4.Text);
                 command.Parameters.AddWithValue("@richTextBox1", richTextBox1.Text);
-                command.Parameters.AddWithValue("@pessoa", Program.userlogged);
+                command.Parameters.Add("@pessoa", SqlDbType.VarChar).Value = Program.userlogged;
                 db.Open();
                 command.ExecuteNonQuery();
                 MessageBox.Show("Dados guardados com sucesso");
